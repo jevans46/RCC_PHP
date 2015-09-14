@@ -1,11 +1,11 @@
 <html>
  <body>
- <?php
-    $let_grade = "NULL";
+ <?php // sets letter grade variable to NULL and sets grade variable from form data
+	$let_grade = "NULL";
  	$grade = $_GET['grade'];
  ?>
 <p>With a grade of <?php echo $_GET["grade"];?>. Your letter grade would be 
-<?php
+<?php // uses if else if else statement to determin grade based off of users input
 		if ($grade < 60)
 		{
 			echo 'F';
